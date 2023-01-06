@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<!-- <app-lancamentos-pesquisa></app-lancamentos-pesquisa> -->
+<!-- <app-lancamento-cadastro></app-lancamento-cadastro> -->
+<!-- <app-pessoas-pesquisa></app-pessoas-pesquisa> -->
+<app-pessoa-cadastro></app-pessoa-cadastro>
+<!--
+<div class="container" [style.padding]="'10px 15px'">
+	<div class="grid">
+
+		<div class="col-12" *ngIf="usuarioForm.invalid && usuarioForm.dirty">
+			<p-messages severity="error">
+				<ng-template pTemplate>
+					<div class="ml-2">Preencha todos os campos corretamente.</div>
+				</ng-template>
+			</p-messages>
+
+		</div>
+		<form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
+			{{ cliente | json}}
+
+			<div class="col-12">
+				<label [style.margin]="'0px'" class="label">Nome</label><br>
+				<input type="text" pInputText name="primeiroNome" [(ngModel)]="cliente.nome" required minlength="4"
+					#nome="ngModel" [class.ng-invalid]="nome.invalid && nome.touched">
+				<div *ngIf="nome.hasError('required') && nome.touched"><small class="p-error block">Informe um
+						nome</small></div>
+				<div *ngIf="nome.hasError('minlength')"><small class="p-error block">O nome deve ter 4 letras</small>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<label [style.margin]="'0px'" class="label">E-mail</label><br>
+				<input type="text" pInputText name="emailAddress" [(ngModel)]="cliente.email" email
+					#emailInput="ngModel" [class.ng-invalid]="emailInput.invalid && emailInput.touched">
+				<div *ngIf="emailInput.invalid"><small class="p-error block">Informe um email válido</small></div>
+			</div>
+
+			<div class="col-12">
+				<label [style.margin]="'0px'" class="label">Profissão</label><br>
+				<select pInputText name="profissao" [(ngModel)]="cliente.profissao" required #profissao="ngModel"
+					[class.ng-invalid]="profissao.invalid && profissao.touched">
+					<option value="">Selecione</option>
+					<option *ngFor="let profissao of profissoes" [value]="profissao">{{ profissao }}</option>
+				</select>
+				<div *ngIf="profissao.invalid && profissao.touched"><small class="p-error block">Informe uma
+						profissão</small></div>
+			</div>
+
+			<button pButton type="submit" class="btn btn-primary" [disabled]="!usuarioForm.valid">Salvar</button>
+		</form>
+
+	</div>
+</div>
+ -->
+
+
+<!-- <div class="container">
+	<app-botao-grande label="App"></app-botao-grande>
+</div> -->

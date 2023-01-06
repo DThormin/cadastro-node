@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  algamoney-ui:
+    build:
+      context: ./
+    ports:
+      - "4200:4200"
+    container_name: algamoney-ui
+    volumes:
+      - ./:/usr/src/app/
+      - /usr/src/app/node_modules
+#      - type: bind
+#        source: ./
+#        target: /usr/src/app/
+#        read_only: false
+
